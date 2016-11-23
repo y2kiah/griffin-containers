@@ -69,7 +69,7 @@ namespace griffin {
 	template <typename T>
 	Id_T handle_map<T>::insert(const T& i)
 	{
-		return insert(T{ i });
+		return insert(std::move(T{ i }));
 	}
 
 
